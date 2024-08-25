@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple pagination module
+Hyper media pagination module
 """
 from typing import Tuple, List, Dict
 import csv
