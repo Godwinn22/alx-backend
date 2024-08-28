@@ -6,14 +6,14 @@ from flask import Flask, render_template
 
 class Config:
     """My config class"""
-    LANGUAGES = ['en', 'fr']
-    BABEL_DEFAULT_LOCALE = 'en'
+    LANGUAGES = ["en", "fr"]
+    BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
 app = Flask(__name__)
-app.url_map.strict_slashes = False
 app.config_class.from_object('Config')
+app.url_map.strict_slashes = False
 babel = Babel(app)
 
 
