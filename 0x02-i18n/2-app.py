@@ -5,7 +5,7 @@ from flask import Flask, render_template
 
 
 class Config:
-    """My config class"""
+    """"""
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = "UTC"
@@ -20,7 +20,7 @@ babel = Babel(app)
 @app.route('/')
 def get_page() -> str:
     """The home page route"""
-    return render_template('1-index.html')
+    return render_template('0-index.html')
 
 
 if __name__ == "__main__":
