@@ -1,0 +1,6 @@
+# Files to ignore
+
+# Ignore all files in the root directory
+
+node_modules/
+/node_modules
